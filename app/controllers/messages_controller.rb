@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.new(params[:message])
+    @message = Message.new params.require(:message).permit(:body)
     if @message.save
       render json: @message
     end
