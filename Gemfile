@@ -22,3 +22,7 @@ gem "active_model_serializers"
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :development, :test do
+  gem 'rspec-rails'
+end
