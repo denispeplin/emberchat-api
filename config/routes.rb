@@ -1,5 +1,7 @@
 EmberchatApi::Application.routes.draw do
-  resources :messages, except: [:new, :edit]
+  resources :messages, except: [:new, :edit] do
+    collection {get :events}
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
