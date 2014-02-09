@@ -1,1 +1,19 @@
 This is companion of [Ember.js chat application](https://github.com/denispeplin/emberchat)
+
+TODO:
+* Fix multi-treading. Checked from zsh, doesn't work:
+```
+% repeat 2 (curl localhost:3000/messages/events)
+0...
+
+1...
+
+2...
+
+0...
+
+1...
+
+2...
+```
+
